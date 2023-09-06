@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scale-no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Webmaster</title>
+    <link rel="icon" type="image/x-icon" href="webmaster_logo 1.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .nav-item-2 {
+            margin-left: 20px;
+        }
+
+        .nav-item-3 {
+            margin-left: 20px;
+        }
+
+        .nav-item-4 {
+            margin-left: 20px;
+            margin-right: 60px;
+        }
+
+        .logo {
+            margin-right: 500px;
+            width: 220px;
+            margin-left: 30px;
+        }
+
+        .explore {
+            text-decoration: none;
+            color: black;
+        }
+
+        .e {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .btn.btn-primary.get {
+            border-radius: 20px;
+        }
+
+        .btn.btn-primary.watch {
+            border-radius: 20px;
+        }
+
+        .pa {
+            margin-right: 20px;
+            margin-left: 100px;
+        }
+
+        .paa {
+            margin-right: 100px;
+            margin-left: ;
+        }
+
+        .p {
+            margin-right: 100px;
+        }
+
+        .h11 {
+            margin-top: 130px;
+            margin-left: 100px;
+        }
+
+        .i {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .testimonial {
+            position: relative;
+            max-width: 900px;
+            width: 100%;
+            padding: 50px 0;
+
+        }
+
+        .slide p {
+            padding: 0 210px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+            color: white;
+        }
+
+        .testimonial.image {
+            height: 170px;
+            width: 170px;
+            object-fit: cover;
+        }
+
+        .testimonial.slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container1 {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #109BC5;
+            margin-top: 40px;
+        }
+
+        .news {
+            padding-left: 450px;
+            margin-top: 40px;
+            font-weight: bolder;
+        }
+
+        .adress {
+            padding: 0;
+            margin: 0;
+            background-color: #109BC5;
+            box-sizing: border-box;
+
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30vh;
+        }
+
+        .form-box {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: ;
+        }
+
+        .form-box input {
+            font-size: 13px;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-bottom: 15px;
+            padding-top: 15px;
+            border: none;
+            outline: none;
+            border-top-left-radius: 20px;
+        }
+
+        .form-box button {
+            background-color: #00C4FF;
+            border: none;
+            outline: none;
+            padding-top: 12px;
+            padding-bottom: 14px;
+            color: white;
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-left: -5px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .sub {
+            color: white;
+            padding-left: 31%;
+            padding-top: 30px;
+            font-weight: bolder;
+        }
+
+        .row.g-3.hi {
+            padding-left: 30%;
+            padding-right: 30%;
+        }
+
+        .dream {
+            padding-left: 25%;
+            font-weight: bold;
+        }
+
+        .dream1 {
+            padding-left: 35%;
+        }
+
+        .dream2 {
+            padding-left: 42%;
+        }
+
+        .container.email {
+            margin-top: 5%;
+        }
+
+        @media only screen and (min-width:200px)and (max-width:480px) {
+            .navbar-toggler {
+                margin-left: 85%;
+                margin-top: -20%;
+            }
+
+            .logo {
+                width: 57%;
+                margin-left: 0px;
+            }
+
+
+            .nav-item-1 {
+                margin-left: 200px;
+            }
+
+            .e {
+                width: 30000%;
+            }
+
+            .b {
+                font-size: -100%;
+            }
+
+            .pa {
+
+                margin-left: 0px
+            }
+
+            .h11 {
+                margin-left: 0px;
+            }
+
+            .slide p {
+                padding: 0 0;
+            }
+
+            .news {
+                padding-left: 30px;
+            }
+
+            .form-box input {
+
+                padding-right: 5px;
+                padding-left: 63px;
+
+            }
+
+            .sub {
+
+                padding-left: 20%;
+            }
+
+            .row.g-3.hi {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+
+            .dream {
+                padding-left: 0%;
+                text-align: center;
+
+            }
+
+            .dream1 {
+                padding-left: 7%;
+            }
+
+            .dream2 {
+                padding-left: 30%;
+            }
+
+            .nav-item-1 {
+                margin-left: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav style="display: flex;justify-content: space-between;" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img class="logo" src="webmaster_logo 1.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item-1">
+                        <a class="nav-link " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item-2">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item-3">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item-4">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li>
+                        <button style="border-radius: 300px;" type="button" class="btn btn-primary">Contack Us</button>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container marketing">
+
+
+
+
+        <!-- START THE FEATURETTES -->
+
+
+        <div class="row featurette">
+            <div class="col-md-7">
+
+                <h1 style="margin-top: 130px;font-weight: bolder;" class="featurette-heading fw-normal lh-1">
+                    <p>Increase <i style="color: #0B5ED7;">Your</i><br><i style="color: #0B5ED7;">
+                            business
+                        </i> Growth
+                </h1>
+                <p class="p">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type
+                    specimen book. </p>
+                <button type="button" class="btn btn-primary get">GET IN TOUCH</button> <button type="button"
+                    class="btn btn-primary watch">WATCH VIDEO</button>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                    src="Rectangle 4.png" style="margin-top:20px">
+
+            </div>
+        </div>
+    </div>
+    <div class="row featurette" style="background-color: #109BC5;width: 100%;margin-top: 40px;">
+        <div class="col-md-5">
+            <h1 style="color: white;" class="featurette-heading fw-normal 1h-1">
+                <p
+                    style="padding-top: 150px; padding-right: 120px;padding-left: 50px;font-size: 50px;font-weight: bold;">
+                    Building Better Solutions</p>
+            </h1>
+        </div>
+        <div class="col-md-7">
+            <div class="container overflow-hidden text-center">
+                <div class="row gy-5">
+                    <div class="col-6" style="padding-top: 100px;width: 45%;">
+                        <div style="background-color: #00C4FF;border-radius: 10px;" class="p-3">
+                            <h6 style="color: white;text-align: left;">Web Development</h6>
+                            <p style="color: white;text-align: left;">Lorem Ipsum is simply dummy text of the
+                                printing and type setting industry Lorem Ipsum
+                                has been the industry's standard.</p>
+                        </div>
+                    </div>
+                    <div class="col-6" style="padding-top: 100px;width: 45%;">
+                        <div style="background-color: #003B70;border-radius: 10px;" class="p-3">
+                            <h6 style="color: white;text-align: left;">Digital Marketing</h6>
+                            <p style="color: white;text-align: left;">Lorem Ipsum is simply dummy text of the
+                                printing and type setting industry Lorem Ipsum
+                                has been the industry's standard.</p>
+                        </div>
+                    </div>
+                    <div class="col-6" style="padding-bottom: 100px;width: 45%;">
+                        <div style="background-color: #003B70;border-radius: 10px;" class="p-3">
+                            <h6 style="color: white;text-align: left;">Branding</h6>
+                            <p style="color: white;text-align: left;">Lorem Ipsum is simply dummy text of the
+                                printing and type setting industry Lorem Ipsum
+                                has been the industry's standard.</p>
+                        </div>
+                    </div>
+                    <div class="col-6" style="padding-bottom: 100px;width: 45%;">
+                        <div style="background-color: #00C4FF;border-radius: 10px;" class="p-3">
+                            <h6 style="color: white;text-align: left;">Pay Per Click ( PPC ) </h6>
+                            <p style="color: white;text-align: left;">Lorem Ipsum is simply dummy text of the
+                                printing and type setting industry Lorem Ipsum
+                                has been the industry's standard.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container marketing">
+
+
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h1 style="font-weight: bolder;" class="featurette-heading fw-normal lh-1 h11">Designs <i
+                        style="color: #0B5ED7;">solutions</i><br><i style="color: #0B5ED7;">
+                        To improve
+                    </i> Products </h1>
+                <p class=" pa">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type
+                    specimen book. </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                    src="Rectangle 13.png" style="margin-top:20px">
+            </div>
+        </div>
+
+
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h1 style="margin-top: 130px;font-weight: bolder;" class="featurette-heading fw-normal lh-1">Designs <i
+                        style="color: #0B5ED7;">solutions</i><br><i style="color: #0B5ED7;">
+                        To improve
+                    </i> Products </h1>
+                <p class=" paa">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type
+                    specimen book. </p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                    src="Rectangle 15.png" style="margin-top:20px">
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="container" style="margin-top: 50px;">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                <h2 style="font-weight: bolder;">Projects <i style="color: #0B5ED7;">We</i> Love</h2>
+            </a>
+
+            <ul class="nav nav-pills"
+                style="background-color:rgb(238,238, 238);border-radius: 5px;padding-left: 10px;padding-top: 5px;">
+                <li class="nav-item"><button type="button" class="btn btn-light text-dark me-2">All</button></li>
+                <li class="nav-item"><a style="color: black;" href="#" class="nav-link">Finances</a></li>
+                <li class="nav-item"><a style="color: black;" href="#" class="nav-link">Branding</a></li>
+                <li class="nav-item"><a style="color: black;" href="#" class="nav-link">Marketing</a></li>
+                <li class="nav-item"><a style="color: black;" href="#" class="nav-link">Strategy</a></li>
+            </ul>
+        </header>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col"><img src="Rectangle 20.png" class="img-thumbnail" alt="..."></div>
+                <div class="col"><img src="Rectangle 21.png" class="img-thumbnail" alt="..."></div>
+                <div class="col"><img src="Rectangle 22.png" class="img-thumbnail" alt="..."></div>
+                <div class="col"><img src="Rectangle 23.png" class="img-thumbnail" alt="..."></div>
+            </div>
+            <div class="row">
+                <div class="col"><img src="Rectangle 20 (1).png" class="img-thumbnail" alt="..."></div>
+                <div class="col"><img src="Rectangle 21 (1).png" class="img-thumbnail" alt="..."></div>
+                <div class="col"><img src="Rectangle 22 (1).png" class="img-thumbnail" alt="..."></div>
+                <div class="col"><img src="Rectangle 23 (1).png" class="img-thumbnail" alt="..."></div>
+            </div>
+        </div>
+    </div>
+    <div class="i">
+        <section class="container1">
+            <div class="testimonial">
+                <div class="testi-content">
+                    <div class="slide"
+                        style="display: flex;align-items: center;justify-content: center;flex-direction: column;row-gap: 30px;">
+                        <h2 style="color: white;font-weight: bolder;">What Our Clients Says <br>
+                            <i style="padding-left: 90px;"> About Us</i>
+                        </h2>
+                        <img src="Group 12.png" class="image">
+
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text
+                            ever since the 1500s, when an unknown printer took a galley of type
+                            and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the
+                            printing and typesetting.</p>
+                        <div class="details" style=" display: flex;
+                        flex-direction: column;
+                        align-items: center;">
+                            <span style="color: white;" class="name">SARA DEWYE</span>
+                            <span style="color: white;font-size: 13px;" class="job">Center Point</span>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <div class="container email">
+        <h2 class="dream">Let’s Start <i style="color: #0B5ED7;">With Your Dream</i> Project </h2>
+        <p class="dream1">We help client make realize their most</p>
+        <p class="dream2">+900 4546 9000</p>
+        <form class="row g-3 hi">
+            <div class="col-md-6">
+
+                <input style="background-color: #f0f0f0;padding-top:10px ;padding-bottom: 10px;" type="email"
+                    class="form-control" id="inputEmail4" placeholder=" Full Name ">
+            </div>
+            <div class="col-md-6">
+
+                <input style="background-color: #f0f0f0;padding-top:10px ;padding-bottom: 10px;" type="password"
+                    class="form-control" id="inputPassword4" placeholder="Last Name">
+            </div>
+            <div class="col-12">
+
+                <input style="background-color: #f0f0f0;padding-top:10px ;padding-bottom: 10px;" type="text"
+                    class="form-control" id="inputAddress" placeholder="Enter Email Address">
+            </div>
+            <div class="col-12">
+
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here " id="floatingTextarea2"
+                        style="height: 150px;background-color: #f0f0f0;"></textarea>
+                    <label for="floatingTextarea2">Additional Message</label>
+                    <button style="margin-left: 80%;" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+
+
+
+            </div>
+
+
+
+        </form>
+
+    </div>
+
+    <div>
+        <h2 class="news">Latest <i style="color: #0B5ED7;">News From Our</i> Team</h2>
+        <div class="album py-5 bg-body-tertiary">
+            <div class="container">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="Rectangle 36.png" alt="">
+                            <div class="card-body">
+                                <p style="font-size: 13px; padding-left: 90px;" class="card-text">BRANDING, WEB DESIGN
+                                </p>
+                                <h5 style=" padding-left: 70px;">Update <i style="color: #0B5ED7;">Your</i> Identity
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button style="margin-left: 110px;border-radius: 20px;" type="button"
+                                            class="btn btn-primary">Read More</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="Rectangle 41.png" alt="">
+                            <div class="card-body">
+                                <p style="font-size: 13px; padding-left: 90px;" class="card-text">BRANDING, WEB DESIGN
+                                </p>
+                                <h5 style=" padding-left: 70px;">Update <i style="color: #0B5ED7;">Your</i> Identity
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button style="margin-left: 110px;border-radius: 20px;" type="button"
+                                            class="btn btn-primary">Read More</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="Rectangle 43.png" alt="">
+                            <div class="card-body">
+                                <p style="font-size: 13px; padding-left: 90px;" class="card-text">BRANDING, WEB DESIGN
+                                </p>
+                                <h5 style=" padding-left: 70px;">Update <i style="color: #0B5ED7;">Your</i> Identity
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button style="margin-left: 110px;border-radius: 20px;" type="button"
+                                            class="btn btn-primary">Read More</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="adress">
+        <h1 class="sub">Subscribe To Our Newsletter </h1>
+        <div class="box">
+
+            <form action="#">
+                <div class="form-box">
+                    <input type="text" name="emailadress" placeholder="Enter Email Address">
+                    <button type="submit">Send</button>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <footer class="bg-light text-black pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <img style="width: 80%;" src="webmaster_logo 1.png" alt="">
+                    <p>Business is one of the best world
+                        leading financial consulting firms </p>
+                    <p><svg style="color: #0B5ED7;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                        </svg> 14 Tottenham Court Road,
+                        London, England </p>
+                    <p><svg style="color: #0B5ED7;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg> +900 4949 1002</p>
+                    <p><svg style="color: #0B5ED7;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-envelope-open-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.314l6.709 3.932L8 8.928l1.291.718L16 5.714V5.4a2 2 0 0 0-1.059-1.765l-6-3.2ZM16 6.873l-5.693 3.337L16 13.372v-6.5Zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516ZM0 13.373l5.693-3.163L0 6.873v6.5Z" />
+                        </svg> info@webmastersolutions.com</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-dark">Explore</h5>
+                    <p>
+                        <a class="text-black" href="#" style="text-decoration:none">Home</a>
+                    </p>
+                    <p>
+                        <a class="text-black" href="#" style="text-decoration:none">About Us</a>
+                    </p>
+                    <p>
+                        <a class="text-black" href="#" style="text-decoration:none">Services</a>
+                    </p>
+                    <p>
+                        <a class="text-black" href="#" style="text-decoration:none">Pricing</a>
+                    </p>
+                    <p>
+                        <a class="text-black" href="#" style="text-decoration:none">Our Team</a>
+                    </p>
+                    <p>
+                        <a class="text-black" href="#" style="text-decoration:none">Contact Us</a>
+                    </p>
+
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-dark"> Quick Links</h5>
+                    <p>
+                        <a class="text-black" href="#" style="text-decoration:none">Home</a>
+                    </p>
+                    <p>
+                        <a class="text-black" href="#" style="text-decoration:none">About Us</a>
+                    </p>
+                    <p>
+                        <a class="text-black" href="#" style="text-decoration:none">Services</a>
+                    </p>
+                    <p>
+                        <a class="text-black" href="#" style="text-decoration:none">Pricing</a>
+                    </p>
+                    <p>
+                        <a class="text-black" href="#" style="text-decoration:none">Our Team</a>
+                    </p>
+                    <p>
+                        <a class="text-black" href="#" style="text-decoration:none">Contact Us</a>
+                    </p>
+
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-dark">Newsletter</h5>
+                    <h5>Newsletter</h5>
+
+                    <div class="form-floating mb-3">
+                        <input style="border-radius: 300px;" type="email" class="form-control" id="floatingInput"
+                            placeholder="name@example.com">
+                        <label for="floatingInput">Name</label>
+                    </div>
+                    <div class="form-floating">
+                        <input style="border-radius: 300px;" type="password" class="form-control" id="floatingPassword"
+                            placeholder="Password">
+                        <label for="floatingPassword">Email</label>
+                    </div>
+                    <button style="border-radius: 300px;padding-left: 80px ;padding-right: 80px;margin-top: 20px;"
+                        type="button" class="btn btn-primary">Submit Now</button>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p>Copyright 2023 Webmaster Solutions | <a href="#" style="text-decoration: none;"><strong
+                                class="text-dark"> Emaan Creations </strong></a></p>
+
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item"><svg style="color: #0B5ED7;" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-facebook"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                </svg></li>
+                            <li class="list-inline-item">
+                                <svg style="color: #0B5ED7;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                                <svg style="color: #0B5ED7;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.051 1.999h. .822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                                </svg>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
